@@ -1,12 +1,72 @@
-﻿<!DOCTYPE html>
-<html lang="pl-PL">
-<html>
-	 <head>
-	  <meta charset="utf-8">
-	  <title> formularz-bielinski </title>
-	 </head>
-	 <body>
-	  	tutaj bedzie formularz <br>
-		<A HREF="menu.html"> wróć </A><br>	
-	 <body>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Komputerowy</title>
+</head>
+<body>
+
+<form action="mailto:bartekbielinski4@gmail.com" method="post" enctype="text/plain">
+    <label for="imie">Imię i nazwisko:</label>
+    <input type="text" id="imie" name="imie" required><br>
+
+    <label for="email">Adres email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="telefon">Numer telefonu:</label>
+    <input type="tel" id="telefon" name="telefon" required><br>
+
+    <p>1. Jaki chciałbyś mieć typ procesora w swoim komputerze:</p>
+    <input type="radio" id="i9" name="procesor" value="Intel Core i9" checked>
+    <label for="i9">Intel Core i9</label><br>
+
+    <input type="radio" id="i7" name="procesor" value="Intel Core i7">
+    <label for="i7">Intel Core i7</label><br>
+
+    <input type="radio" id="ryzen9" name="procesor" value="AMD Ryzen 9">
+    <label for="ryzen9">AMD Ryzen 9</label><br>
+
+    <input type="radio" id="ryzen7" name="procesor" value="AMD Ryzen 7">
+    <label for="ryzen7">AMD Ryzen 7</label><br>
+
+    <p>2. Jaką chciałbyś mieć kartę graficzną w swoim komputerze:</p>
+    <input type="radio" id="rtx4090" name="grafika" value="NVIDIA GeForce RTX 4090" checked>
+    <label for="rtx4090">NVIDIA GeForce RTX 4090</label><br>
+
+    <input type="radio" id="rtx4080" name="grafika" value="NVIDIA GeForce RTX 4080">
+    <label for="rtx4080">NVIDIA GeForce RTX 4080</label><br>
+
+    <input type="radio" id="rx7900" name="grafika" value="AMD Radeon RX 7900">
+    <label for="rx7900">AMD Radeon RX 7900</label><br>
+
+    <input type="radio" id="rx6950" name="grafika" value="AMD Radeon RX 6950">
+    <label for="rx6950">AMD Radeon RX 6950</label><br>
+
+    <p>3. Jakiej mocy zasilacz chciałbyś mieć w swoim komputerze:</p>
+    <select id="zasilacz" name="zasilacz">
+        <option value="2050W">2050W</option>
+        <option value="1000W">1000W</option>
+        <option value="650W">650W</option>
+        <option value="450W">450W</option>
+    </select><br>
+
+    <p>4. Jaki typ obudowy chciałbyś mieć w swoim komputerze:</p>
+    <input type="radio" id="mini" name="obudowa" value="Mini Tower" checked>
+    <label for="mini">Mini Tower</label><br>
+
+    <input type="radio" id="micro" name="obudowa" value="Micro Tower">
+    <label for="micro">Micro Tower</label><br>
+
+    <input type="radio" id="middle" name="obudowa" value="Middle Tower">
+    <label for="middle">Middle Tower</label><br>
+
+    <input type="radio" id="big" name="obudowa" value="Big Tower">
+    <label for="big">Big Tower</label><br>
+
+    <br>
+    <input type="submit" value="Wyślij dane">
+</form>
+
+</body>
+</html>
